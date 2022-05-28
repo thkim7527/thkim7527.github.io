@@ -3,56 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
         <title>thkim7527</title>
-        <style>
-            body, html {
-                height: 100%;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            body {
-                background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-
-            img {
-                width: 500px;
-                height: auto;
-            }
-
-            #texts * {
-                margin: 5px;
-                font-family: monospace;
-                text-align: center;
-            }
-
-            @media (max-width: 500px) {
-                body {
-                    background-image: url("./img/cake.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position-x: center;
-                }
-
-                img {
-                    display: none;
-                }
-
-                #texts {
-                    position: fixed;
-                    top: 0px;
-                }
-            }
-        </style>
     </head>
     <body>
         <img src="./img/cake.jpg" alt="cake">
-        <div id="texts">
+        <div>
             <h1>Happy Birthday!</h1>
             <h2>2007. 05. 27.</h2>
             <h3>Although it's been a while</h3>

@@ -1,0 +1,43 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+div * {
+    margin: 5px;
+    font-family: monospace;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("./img/cake.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    div {
+        position: fixed;
+        top: 0px;
+    }
+}
