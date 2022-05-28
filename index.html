@@ -6,6 +6,7 @@
         <title>thkim7527</title>
         <style>
             body, html {
+                height: 100%;
                 margin: 0px;
                 padding: 0px;
             }
@@ -16,15 +17,46 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
             }
 
             img {
-                height: 100%;
+                width: 500px;
+                height: auto;
+            }
+
+            #texts * {
+                margin: 5px;
+                font-family: monospace;
+                text-align: center;
+            }
+
+            @media (max-width: 500px) {
+                body {
+                    background-image: url("./img/cake.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position-x: center;
+                }
+
+                img {
+                    display: none;
+                }
+
+                #texts {
+                    position: fixed;
+                    top: 0px;
+                }
             }
         </style>
     </head>
     <body>
         <img src="./img/cake.jpg" alt="cake">
-        <h1>Happy Birthday!</h1>
+        <div id="texts">
+            <h1>Happy Birthday!</h1>
+            <h2>2007. 05. 27.</h2>
+            <h3>Although it's been a while</h3>
+            <h3>and haven't congratulated...</h3>
+        </div>
     </body>
 </html>
